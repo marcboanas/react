@@ -121,7 +121,7 @@ var CommentForm = React.createClass({
               <input idName="authorInput" className="form-control" type="text" placeholder="Your name" ref="author" />
             </div>
             <div className="form-group">
-              <label className="control-label">Author</label>
+              <label className="control-label">Text</label>
               <textarea className="form-control" id="commentInput" rows="3" placeholder="Say something..." ref="text"></textarea>
             </div>
             <input type="submit" className="btn btn-primary" value="Post" />
