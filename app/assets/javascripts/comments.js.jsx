@@ -53,7 +53,6 @@ var CommentBox = React.createClass({
         type: 'POST',
         data: { comment: comment },
         success: function(data) {
-          this.setState({data: data});
         }.bind(this),
         error: function(xhr, status, err) {
           console.error(this.props.url, status, err.toString());
@@ -81,7 +80,6 @@ var CommentBox = React.createClass({
 
 var CommentList = React.createClass({
   render: function() {
-    console.log(this.props.data)
     var commentNodes = this.props.data.map(function(comment, index) {
       return (
         // `key` is a React-specific concept and is not mandatory for the
